@@ -1,0 +1,61 @@
+const mongoose = require('mongoose')
+const AdmissionSchema = mongoose.Schema({
+    fullName:{
+        type:String,
+        required:true,
+    },
+    degreeLevel:{
+        type:String,
+        required:true,
+    },
+    studentPhoto:{
+        type:String,
+        required:true,
+    },
+    nationalId:{
+        type:Number,
+        required:true,
+    },
+    fathersName:{
+        type:String,
+        required:true,
+    },
+    mothersName:{
+        type:String,
+        required:true,
+    },
+    contactNumber:{
+        type:Number,
+        required:true,
+    },
+    email:{
+        type:String,
+        required:true,
+    },
+    PresentAddress:{
+        type:String,
+        required:true,
+    },
+    birthdate:{
+        type:String,
+        required:true,
+    },
+    SchoolName:{
+        type:String,
+        required:true,
+    },
+    schoolYear:{
+        type:String,
+        required:true,
+    },
+    qualification:{
+        type:String,
+        required:true,
+    },
+    areaStudey:{
+        type:String,
+        required:true,
+    },
+})
+
+module.exports = AdmissionSchema
